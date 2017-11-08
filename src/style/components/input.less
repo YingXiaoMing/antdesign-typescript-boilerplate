@@ -1,0 +1,39 @@
+.df-search.ant-input {
+  border-right: 0;
+  border-radius: 4px !important;
+
+  & + .ant-input-group-addon {
+    padding: 0;
+    border: 0;
+
+    button {
+      width: 28px;
+      height: 28px;
+      margin-left: -28px;
+      padding: 0;
+      text-align: center;
+      z-index: 2;
+    }
+  }
+
+  &.height32 {
+    height: 32px;
+
+    & + .ant-input-group-addon button {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.df-search-wrap-full-width .ant-input-group-wrapper {
+  width: 100%;
+}
+
+.has-error {
+  .input-explain {
+    margin-top: 5px;
+    color: #f04134;
+    text-align: left;
+  }
+}

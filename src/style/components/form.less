@@ -1,0 +1,95 @@
+@import '../variable.less';
+
+.df-form.ant-form {
+
+  &.all-required:after {
+    content: '*所有项为必填项';
+    position: absolute;
+    bottom: 26px;
+    right: 20px;
+    color: @button-red;
+  }
+
+  &.no-required-star .ant-form-item-required:before,
+  .ant-form-item.no-required-start .ant-form-item-required:before {
+    content: none;
+  }
+
+  .ant-form-item {
+
+    .ant-form-explain {
+      display: inline-block;
+    }
+    
+    &.wrap-form-item {
+
+      .ant-form-explain {
+        display: block;
+        line-height: inherit;
+      }
+    }
+  }
+
+  .ant-form-item-control-wrapper {
+    padding-left: 10px;
+  }
+
+  .form-item-empty-label .ant-form-item-label label:after {
+    content: none;
+  }
+
+  &.label-left {
+    
+    .ant-form-item-label {
+      text-align: left;
+    }
+  }
+
+  &.height32 {
+    
+    .ant-select-selection--single {
+      height: 32px;
+    }
+    
+    .ant-select-selection__rendered {
+      line-height: 32px;
+    }
+
+    .ant-dropdown-trigger {
+      width: 100%;
+      height: 32px;
+      padding: 6px 7px;
+      text-align: left;
+
+      .anticon {
+        float: right;
+      }
+    }
+  }
+
+  &.df-required-tail-form {
+    .ant-select,
+    .ant-input,
+    .ant-dropdown-trigger {
+      width: ~"calc(100% - 40px)" !important;
+
+      &.full {
+        width: 100% !important;
+      }
+    }
+
+    .ant-select .ant-input {
+      width: 100% !important;
+    }
+    
+    .ant-form-item-label .ant-form-item-required:before {
+      content: none;
+    }
+
+    .ant-form-item-required.fixed {
+      position: absolute;
+      top: 0;
+      right: 13px;
+    }
+  }
+}

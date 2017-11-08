@@ -1,0 +1,99 @@
+@import '../../../node_modules/antd/lib/style/color/colorPalette.less';
+@import '../../../node_modules/antd/lib/style/themes/default.less';
+@import '../../../node_modules/antd/es/button/style/mixin.less';
+@import '../variable.less';
+
+.df-modal {
+
+  .ant-modal-header,
+  .ant-modal-content {
+    background-color: @modal-bg-color;
+  }
+
+  .ant-modal-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  
+  .ant-modal-header,
+  .ant-modal-footer {
+    border: 0;
+    padding: 20px;
+  }
+
+  .ant-modal-body {
+    padding: 10px 20px;
+  }
+
+  &.hidden-footer .ant-modal-footer {
+    display: none;
+  }
+}
+
+.ant-modal-footer {
+  text-align: center;
+
+  .ant-btn {
+    width: 80px;
+    font-weight: normal;
+  }
+
+  .ant-btn:first-child {
+    .button-variant-primary(#FFF; #A5AEBE);
+  }
+}
+
+.custom-confirm-modal.ant-modal {
+  width: 350px !important;
+
+  .ant-modal-close {
+    display: none;
+  }
+
+  .ant-modal-footer {
+    border-top: none;
+  }
+
+  .subtitle {
+    color: #B1B1B1;
+    font-size: .9em;
+    margin-top: 10px;
+  }
+}
+
+.custom-pure-modal.ant-modal {
+
+  .ant-modal-body img {
+    vertical-align: middle;
+  }
+
+  .ant-modal-footer {
+    display: none;
+  }
+}
+
+.ant-confirm-confirm {
+
+  .ant-confirm-body {
+    text-align: center;
+    
+    & > .anticon {
+      display: none;
+    }
+
+    .ant-confirm-content {
+      margin-left: 0;
+      font-size: 14px;
+    }
+  }
+
+  &.ant-confirm .ant-confirm-btns {
+    float: none;
+    text-align: center;
+
+    .ant-btn {
+      padding: 0 20px;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.df-table {
+  @row-active-bgcolor: #E4F0FF;
+
+  .ant-table table {
+    text-align: center;
+  }
+
+  .ant-table-thead > tr > th, 
+  .ant-table-tbody > tr > td,
+  .ant-table-placeholder {
+    padding: 10px 8px;
+  }
+
+  .ant-table-thead > tr, 
+  .ant-table-tbody > tr {
+    &.active {
+      & > td {
+        background-color: @row-active-bgcolor !important;
+      }
+    }
+  }
+
+  .ant-table-thead > tr > th {
+    text-align: center;
+    background-color: #FBFBFB;
+    font-weight: normal;
+  }
+
+  .ant-table-tbody > tr:nth-child(2n+1) > td {
+    background-color: #FFFFFF;
+  }
+
+  .ant-table-tbody > tr:nth-child(2n) > td {
+    background-color: #FBFBFB;
+  }
+}
+
+.df-pagination {
+  text-align: right;
+
+  .ant-pagination-prev, 
+  .ant-pagination-next,
+  .ant-pagination-item {
+    background-color: #F4F4F4;
+    margin-left: 5px !important;
+  }
+
+  .ant-pagination-item-active {
+    background-color: @button-grey;
+    border-color: @button-grey;
+  }
+}
